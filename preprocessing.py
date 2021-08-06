@@ -163,8 +163,8 @@ def get_statistics_test(data_frame_all):
 
 
 if __name__ == '__main__':
-    train_file_name = "Training.tsv"
-    test_file_name = "Testing.tsv"
+    train_file_name = "F:\\study\\postgraduate\\CDMC2021\\Task1\\Training.tsv"
+    test_file_name = "F:\\study\\postgraduate\\CDMC2021\\Task1\\Testing.tsv"
     test_data_frame = read_file(test_file_name, 'test', padding=True, max_length=169)
     train_data_frame = read_file(train_file_name, 'train', padding=True, max_length=169)
     # x_train, x_test, y_train, y_test = split_train_and_dev_k_fold(train_data_frame)

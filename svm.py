@@ -28,6 +28,7 @@ def svm_train_and_test(x_train, x_test, y_train, y_test):
 def svm_run(train_data_frame):
     x = train_data_frame.values.tolist()
     for i in range(len(x)):  # 矩阵展开成向量，测试 16900维
+        print(i)
         x_i_2_temp = []
         for j in range(len(x[i][2])):
             x_i_2_temp += x[i][2][j]
