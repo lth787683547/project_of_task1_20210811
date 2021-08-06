@@ -1,0 +1,15 @@
+训练集
+word_vector数据
+min: 1
+max: 169
+average: 6.699211638491548
+middle: 3
+正负样例数据
+begign: 61520
+malicious: 61520
+测试集
+min: 1
+max: 129
+average: 6.755115297174407
+middle: 3
+填充至169
