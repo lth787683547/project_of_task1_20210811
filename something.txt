@@ -13,3 +13,5 @@ max: 129
 average: 6.755115297174407
 middle: 3
 填充至169
+存在部分word_vector相同，但有的benign有的malicious，这部分考虑删除原始数据？或者用比例大的来预测？
+
