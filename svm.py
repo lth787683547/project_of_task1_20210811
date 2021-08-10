@@ -44,7 +44,7 @@ def svm_train_and_test_linear(x_train, x_test, y_train, y_test):
     #print(x_train, x_test, y_train, y_test)
     x = x_train.values.tolist()
     x = [i[2] for i in x]
-    print("after deal x:",get_current_memory_gb())
+    print("after deal x:", get_current_memory_gb())
     y = y_train.values.tolist()
     print("after deal y:", get_current_memory_gb())
     x2 = x_test.values.tolist()
@@ -86,8 +86,8 @@ def svm_run(train_data_frame):
         #gc.collect()
     train_data_frame = DataFrame(x, columns=['id', 'category', 'word_vector', 'label'])
     x_train, x_test, y_train, y_test = preprocessing.split_train_and_dev(train_data_frame)
-    print("before train",get_current_memory_gb())
-    #score = svm_train_and_test(x_train, x_test, y_train, y_test)
-    score = svm_train_and_test_linear(x_train, x_test, y_train, y_test)
+    print("before train", get_current_memory_gb())
+    score = svm_train_and_test(x_train, x_test, y_train, y_test)
+    #score = svm_train_and_test_linear(x_train, x_test, y_train, y_test)
     print(score)
 
